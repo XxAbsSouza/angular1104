@@ -1,0 +1,12 @@
+<div>
+  <div *ngFor="let mensagem of mensagens">
+      {{mensagem}}
+  </div>
+
+  <textarea [(ngModel)]="novamensagem"></textarea>
+  <button (click)="envioMensagem()">Enviar</button>
+</div>
+
+
+
+<router-outlet />
